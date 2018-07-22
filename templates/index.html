@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+
+<body>
+    <h2>{{mars_data.news}}</h2>
+    <h2>{{mars_data.weather}}</h2>
+    {{mars_data.table|safe}}
+    <img src="{{mars_data["Featured Image"]}}" alt="">
+    <img src="{{mars_data["Hemispheres"][0]["url"]}}" alt="{{mars_data["Hemispheres"][0]["title"]}}">
+    <img src="{{mars_data["Hemispheres"][1]["url"]}}" alt="">
+    <img src="{{mars_data["Hemispheres"][2]["url"]}}" alt="">
+    <img src="{{mars_data["Hemispheres"][3]["url"]}}" alt="">
+
+
+</body>
+
+</html>
