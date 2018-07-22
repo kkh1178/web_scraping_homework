@@ -15,7 +15,7 @@ def index():
     # read the mongo database for the mars data
     mars_data = mongo.db.martian.find_one()
     print(mars_data)
-    return render_template("index.html", mars_data=mars_data)
+    return render_template("index2.html", mars_data=mars_data)
 
 @app.route("/scrape")
 def get_data():
